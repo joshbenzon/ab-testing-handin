@@ -1,2 +1,3 @@
-# ab-testing-handin
-User Interface &amp; User Experience (CSCI 1300) Project #2
+# Project #3 (Responsive Redesign)
+
+User Interface &amp; User Experience (CSCI 1300)
