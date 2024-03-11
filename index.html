@@ -114,20 +114,6 @@
 
             <section>
                 <h3>Creating Hypotheses</h3>
-                <p>todo</p>
-            </section>
-
-            <hr aria-label="inner-divider" class="inner-divider" />
-
-            <section>
-                <h3>About the Data</h3>
-                <p>todo</p>
-            </section>
-
-            <hr aria-label="inner-divider" class="inner-divider" />
-
-            <section>
-                <h3>Run Statistical Tests on the Data</h3>
 
                 <h4>Misclick Rate</h4>
                 <h5>
@@ -213,6 +199,102 @@
                     appointments that fit the user's needs and wants (gray vs
                     green buttons). Hence, the Misclick Rate, Time on Page, and
                     the Number of Clicks will all be lower than Design A.
+                </p>
+            </section>
+
+            <hr aria-label="inner-divider" class="inner-divider" />
+
+            <section>
+                <h3>Run Statistical Tests on the Data</h3>
+                <h4>Misclick Rate</h4>
+                <div class="image">
+                    <img
+                        src="./results/Result (Misclick Rate).png"
+                        alt="Results of Results (Misclick Rate)"
+                    />
+                    <p class="caption">Summary of Results (Misclick Rate)</p>
+                </div>
+
+                <p>
+                    The test we used is the "One-Tailed T-Test," because it
+                    compares an experimental value (from Design B) that's either
+                    bigger or smaller than a baseline number (from Design A).
+                </p>
+                <p>
+                    Since we hypothesized that Version A's value is larger than
+                    Version B, we need to take the compliment of the p-value: 1
+                    - 0.9969066735 = 0.0030933265. Since the p-value of
+                    0.0030933265 is less than 0.05, we reject the null
+                    hypothesis. Thus, we found statistically significant
+                    evidence that the alternative hypothesis is true.
+                </p>
+                <p>
+                    Likewise in regards to the misclick rate, the average value
+                    of Design A is about 0.206 rating and for Design B is 0
+                    rating. Hence, since a positive value resembles "True," we
+                    are confident that the hypothesis of "Version A will have a
+                    higher misclick rate than Version B" is true.
+                </p>
+
+                <h4>Time on Page</h4>
+                <div class="image">
+                    <img
+                        src="./results/Result (Time on Page).png"
+                        alt="Results of Results (Time on Page)"
+                    />
+                    <p class="caption">Summary of Results (Time on Page)</p>
+                </div>
+
+                <p>
+                    The test we used is the "One-Tailed T-Test," because it
+                    compares an experimental value (from Design B) that's either
+                    bigger or smaller than a baseline number (from Design A).
+                </p>
+                <p>
+                    Since we hypothesized that Version A's value is larger than
+                    Version B, we need to take the compliment of the p-value: 1
+                    - 0.9751880081 = 0.0248119919. Since the p-value of
+                    0.0248119919 is less than 0.05, we reject the null
+                    hypothesis. Thus, we found statistically significant
+                    evidence that the alternative hypothesis is true.
+                </p>
+                <p>
+                    Likewise in regards to the time on the page, the average
+                    value of Design A is about 12860 milliseconds and for Design
+                    B is about 8259 milliseconds. Hence, we are confident that
+                    the hypothesis of "Version A will have a higher time spent
+                    on the page than Version B" is true.
+                </p>
+
+                <h4>Number of Clicks</h4>
+                <div class="image">
+                    <img
+                        src="./results/Result (Number of Clicks).png"
+                        alt="Results of Results (Number of Clicks)"
+                    />
+                    <p class="caption">Summary of Results (Number of Clicks)</p>
+                </div>
+
+                <p>
+                    The test we used is the "One-Tailed T-Test," because it
+                    compares an experimental value (from Design B) that's either
+                    bigger or smaller than a baseline number (from Design A).
+                </p>
+                <p>
+                    Since we hypothesized that Version A's value is larger than
+                    Version B, we need to take the compliment of the p-value: 1
+                    - 0.9331260592 = 0.0668739408. Since the p-value of
+                    0.0248119919 is greater than 0.05, we fail to reject the
+                    null hypothesis. Thus, we did NOT find statistically
+                    significant evidence that the alternative hypothesis is
+                    true.
+                </p>
+                <p>
+                    Likewise in regards to the number of clicks, the average
+                    value of Design A is about 3 clicks and for Design B is
+                    about 2 clicks. Hence, we are NOT confident that the
+                    hypothesis of "Version A will have a higher number of clicks
+                    than Version B" is true.
                 </p>
             </section>
 
