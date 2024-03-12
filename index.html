@@ -33,24 +33,33 @@
         <!-- TITLE -->
         <section id="title">
             <h1>A/B Testing</h1>
-            <p>todo</p>
+            <p>
+                Using statistical analysis to evaluate different design
+                decisions
+            </p>
 
-            <img src="" alt="" />
+            <img
+                id="final-product"
+                src="./images/A:B Testing.png"
+                alt="A/B Testing"
+            />
         </section>
 
         <!-- OVERVIEW -->
         <section>
             <h2>Overview</h2>
             <p>
-                In this project, I redesigned the user interface and user
-                experience for the LetterBoxd app, a desktop and mobile app for
-                users to see their movie reviews from their friends. I analyzed
-                the user accessibility and its problems.
+                In this project, I redesigned an appointment scheduling system
+                and gathered data between the original design and my new design.
+                In order to evaluate which design is "better" according to our
+                needs, I used hypothesis testing and statistical analysis.
             </p>
             <p>
-                I also created sketches, low-fidelity designs, and high-fidelity
-                designs for the redesign. Then, I developed this redesign with
-                HTML and CSS.
+                Additionally, the overarching question we are proving is how the
+                organization of visual elements and the different colors both
+                impact the response rate of certain tasks. Likewise, A/B Testing
+                can help us make this observation by analyzing both speed and
+                accuracy when performing tasks.
             </p>
         </section>
 
@@ -70,9 +79,11 @@
                 <p>
                     In regards to my design changes, I decided to "gray out" the
                     buttons that the appointment criteria did not aligned with
-                    and also made the appointment that did with green. This
-                    allowed users to pinpoint exactly, which appointments are
-                    available given their criteria.
+                    and also made the appointment that did align with green. I
+                    also separated each appointment block with a divider to
+                    differentiate the grouping of text and buttons. This allowed
+                    users to pinpoint exactly, which appointments are available
+                    given their criteria.
                 </p>
 
                 <div class="horizontal-flex">
@@ -109,6 +120,7 @@
 
         <hr aria-label="outer-divider" class="outer-divider" />
 
+        <!-- PART 2 -->
         <section>
             <h2>Part 2: Analysis</h2>
 
@@ -142,7 +154,7 @@
 
                 <h4>Time on Page</h4>
                 <h5>
-                    This metric of choice resembles the otal time (in
+                    This metric of choice resembles the total time (in
                     milliseconds) that the user spent on the page.
                 </h5>
                 <p>
@@ -193,12 +205,13 @@
 
                 <p class="extra-text">
                     Additionally, I predict for all 3 of these metrics that we
-                    will reject each of the null hypothesis. Design B offers an
-                    both organized differentiation with line dividers between
+                    will reject each of the null hypothesis. Design B offers
+                    both an organized differentiation with line dividers between
                     each appointment block and also a clear visual change for
-                    appointments that fit the user's needs and wants (gray vs
+                    appointments that fit the user's needs and wants (gray vs.
                     green buttons). Hence, the Misclick Rate, Time on Page, and
-                    the Number of Clicks will all be lower than Design A.
+                    the Number of Clicks will all be lower for Design B compared
+                    to Design A.
                 </p>
             </section>
 
@@ -219,18 +232,22 @@
                     The test we used is the "One-Tailed T-Test," because it
                     compares an experimental value (from Design B) that's either
                     bigger or smaller than a baseline number (from Design A).
+                    The p-value represents the chance that the groups are
+                    actually the same.
                 </p>
                 <p>
                     Since we hypothesized that Version A's value is larger than
                     Version B, we need to take the compliment of the p-value: 1
                     - 0.9969066735 = 0.0030933265. Since the p-value of
                     0.0030933265 is less than 0.05, we reject the null
-                    hypothesis. Thus, we found statistically significant
-                    evidence that the alternative hypothesis is true.
+                    hypothesis (as the low p-value signals that the groups
+                    aren't likely the same). Thus, we found statistically
+                    significant evidence that the alternative hypothesis is
+                    true.
                 </p>
                 <p>
                     Likewise in regards to the misclick rate, the average value
-                    of Design A is about 0.206 rating and for Design B is 0
+                    of Design A is about a 0.206 rating and for Design B is a 0
                     rating. Hence, since a positive value resembles "True," we
                     are confident that the hypothesis of "Version A will have a
                     higher misclick rate than Version B" is true.
@@ -249,14 +266,18 @@
                     The test we used is the "One-Tailed T-Test," because it
                     compares an experimental value (from Design B) that's either
                     bigger or smaller than a baseline number (from Design A).
+                    The p-value represents the chance that the groups are
+                    actually the same.
                 </p>
                 <p>
                     Since we hypothesized that Version A's value is larger than
                     Version B, we need to take the compliment of the p-value: 1
                     - 0.9751880081 = 0.0248119919. Since the p-value of
                     0.0248119919 is less than 0.05, we reject the null
-                    hypothesis. Thus, we found statistically significant
-                    evidence that the alternative hypothesis is true.
+                    hypothesis (as the low p-value signals that the groups
+                    aren't likely the same). Thus, we found statistically
+                    significant evidence that the alternative hypothesis is
+                    true.
                 </p>
                 <p>
                     Likewise in regards to the time on the page, the average
@@ -279,15 +300,18 @@
                     The test we used is the "One-Tailed T-Test," because it
                     compares an experimental value (from Design B) that's either
                     bigger or smaller than a baseline number (from Design A).
+                    The p-value represents the chance that the groups are
+                    actually the same.
                 </p>
                 <p>
                     Since we hypothesized that Version A's value is larger than
                     Version B, we need to take the compliment of the p-value: 1
                     - 0.9331260592 = 0.0668739408. Since the p-value of
                     0.0248119919 is greater than 0.05, we fail to reject the
-                    null hypothesis. Thus, we did NOT find statistically
-                    significant evidence that the alternative hypothesis is
-                    true.
+                    null hypothesis (as the higher p-value signals that the
+                    groups are likely the same). Thus, we did NOT find
+                    statistically significant evidence that the alternative
+                    hypothesis is true.
                 </p>
                 <p>
                     Likewise in regards to the number of clicks, the average
@@ -304,24 +328,28 @@
                 <h3>Summary Statistics</h3>
                 <p>
                     When it comes to Design A, the average misclick rate is
-                    about 0.206 (median: 1 & mode: 0), the average time on the
-                    page is about 12860 milliseconds (median: 8223 & mode: n/a),
-                    and the average number of clicks is about 3 clicks (median:
-                    2 & mode: 2).
+                    about a rate of 0.206 (variance: 0.168, median: 1, mode: 0),
+                    the average time on the page is about 12860 milliseconds
+                    (variance: 140609949, median: 8223, mode: n/a), and the
+                    average number of clicks is about 3 clicks (variance: 8.750,
+                    median: 2, mode: 2).
                 </p>
                 <p>
-                    When it comes to Design B, the average misclick rate is
-                    about 0 (median: 0 & mode: 0), the average time on the page
-                    is about 8259 milliseconds (median: 7401 & mode: n/a), and
-                    the average number of clicks is about 2 clicks (median: 2 &
+                    When it comes to Design B, the average misclick rate is a
+                    rate of 0 (variance: 0, median: 0, mode: 0), the average
+                    time on the page is about 8259 milliseconds (variance:
+                    33783195, median: 7401, mode: n/a), and the average number
+                    of clicks is about 2 clicks (variance: 0.413, median: 2,
                     mode: 2).
                 </p>
                 <p>
-                    Hence, we can see that overall Design A had a higher
-                    misclick rate, a higher time on the page, and higher number
-                    (average and median) of clicks than Design B. Both Design A
-                    and Design B have above 30 data points and a mostly equal
-                    distribution (39 vs. 36).
+                    Both Design A and Design B have above 30 data points and a
+                    mostly equal distribution (39 vs. 36). Hence, we can see
+                    that overall Design A had a higher misclick rate, a higher
+                    time on the page, and higher number (average and median) of
+                    clicks than Design B. Thus, this may be evidence to show
+                    that the designs in Design B have better accuracy and faster
+                    rates of performing the task.
                 </p>
             </section>
         </section>
@@ -332,13 +360,11 @@
         <section id="conclusion">
             <h3>Conclusion</h3>
             <p>
-                In conclusion, I found that iteration is important when
-                designing and to not let "perfection be the enemy of good." I've
-                also found that development constraints are important signals to
-                go back to the drawing board sometimes. Finally, I found
-                designing and actually developing for different screen sizes is
-                a lot more complex, as it considers how different elements shift
-                and even entirely disappear when transitioning.
+                In conclusion, I found that it's difficult to pinpoint which
+                designs are "better," as there's many different metrics to
+                compare against. Finally, I found that utilizing statistical
+                analysis with the scientific method is how we can mathematically
+                prove which designs are indeed "better."
             </p>
         </section>
     </body>
